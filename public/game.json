@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Game Night Extravaganza",
+      "image": "https://i.ibb.co/rHKqGVP/shutterstock-1032784552.jpg",
+      "price": "$250",
+      "description": "Turn your home into a gaming paradise with our expert event management. We provide a wide range of board games, video game setups, and snacks for a night to remember."
+    },
+    {
+      "id": 2,
+      "name": "eSports Tournament Hosting",
+      "image": "https://i.ibb.co/Yp8yncM/eSports.jpg",
+      "price": "$500",
+      "description": "Organize and host eSports tournaments with professional setups, streaming, and commentary. Compete against the best in various popular video games."
+    },
+    {
+      "id": 3,
+      "name": "Tabletop Game Fest",
+      "image": "https://i.ibb.co/hX3CWgx/d23076bf-b35c-44bc-a8c4-55715b9794f4-52160-00001932a074a3d5.webp",
+      "price": "$180",
+      "description": "Enjoy a day of tabletop gaming with friends and family. We provide an extensive collection of board games, card games, and RPGs for an immersive experience."
+    },
+    {
+      "id": 4,
+      "name": "VR Gaming Event",
+      "image": "https://i.ibb.co/2gxGpNg/VR.jpg",
+      "price": "$300",
+      "description": "Step into the world of virtual reality with our VR gaming event. Explore exciting virtual environments and challenges with the latest VR equipment."
+    },
+    {
+      "id": 5,
+      "name": "LAN Party Setup",
+      "image": "https://i.ibb.co/ZMMS66D/lan-1.png",
+      "price": "$350",
+      "description": "Organize a LAN party with your friends. We provide high-speed networking, gaming rigs, and refreshments for an epic multiplayer gaming experience."
+    },
+    {
+      "id": 6,
+      "name": "Game Developers Showcase",
+      "image": "https://i.ibb.co/XZj1Xr1/download.jpg",
+      "price": "$400",
+      "description": "Highlight your indie game or showcase the latest releases with our game developers event. Connect with gamers and industry professionals."
+    }
+  ]
+  
