@@ -6,6 +6,7 @@ const Home = () => {
  
   return (
     <div className="mt-2 lg:mt-10 max-w-7xl mx-auto">
+
       {/* banner */}
 
       <div className="carousel lg:h-[550px]">
@@ -53,6 +54,8 @@ const Home = () => {
         {
           services.map(service=><Card key={service.id} service={service}></Card>)
         }
+      </div>
+      <div>
       </div>
     </div>
   );

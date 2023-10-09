@@ -4,42 +4,48 @@
       "name": "Game Night Extravaganza",
       "image": "https://i.ibb.co/rHKqGVP/shutterstock-1032784552.jpg",
       "price": "$250",
-      "description": "Turn your home into a gaming paradise with our expert event management. We provide a wide range of board games, video game setups, and snacks for a night to remember."
+      "description": "Turn your home into a gaming paradise with our expert event management. We provide a wide range of board games, video game setups, and snacks for a night to remember.",
+      "details" : "Game Night Extravaganza is the ultimate gathering for fun-loving friends and families. Join us for a thrilling evening of board games, card games, and interactive challenges. With a variety of games to choose from and prizes to be won, it's a night of laughter, strategy, and camaraderie. Don't miss out on this unforgettable gaming experience!"
     },
     {
       "id": 2,
       "name": "eSports Tournament Hosting",
       "image": "https://i.ibb.co/Yp8yncM/eSports.jpg",
       "price": "$500",
-      "description": "Organize and host eSports tournaments with professional setups, streaming, and commentary. Compete against the best in various popular video games."
+      "description": "Organize and host eSports tournaments with professional setups, streaming, and commentary. Compete against the best in various popular video games.",
+      "details" : "eSports Tournament Hosting involves organizing and managing competitive video gaming events. From coordinating player registrations to setting up venues with cutting-edge technology, these hosts ensure a seamless experience for participants and viewers alike. They oversee logistics, live streaming, and prize distribution, making eSports tournaments a thrilling spectacle in the world of online gaming."
     },
     {
       "id": 3,
       "name": "Tabletop Game Fest",
       "image": "https://i.ibb.co/hX3CWgx/d23076bf-b35c-44bc-a8c4-55715b9794f4-52160-00001932a074a3d5.webp",
       "price": "$180",
-      "description": "Enjoy a day of tabletop gaming with friends and family. We provide an extensive collection of board games, card games, and RPGs for an immersive experience."
+      "description": "Enjoy a day of tabletop gaming with friends and family. We provide an extensive collection of board games, card games, and RPGs for an immersive experience.",
+      "details" : "Tabletop Game Fest is an exhilarating gathering for board game enthusiasts, bringing together players of all ages and experience levels. This event features a diverse array of tabletop games, from classic board games to modern strategy titles and card games. With tournaments, demos, and a vibrant gaming community, Tabletop Game Fest is the ultimate destination for tabletop gaming enthusiasts to immerse themselves in hours of fun and strategy."
     },
     {
       "id": 4,
       "name": "VR Gaming Event",
       "image": "https://i.ibb.co/2gxGpNg/VR.jpg",
       "price": "$300",
-      "description": "Step into the world of virtual reality with our VR gaming event. Explore exciting virtual environments and challenges with the latest VR equipment."
+      "description": "Step into the world of virtual reality with our VR gaming event. Explore exciting virtual environments and challenges with the latest VR equipment.",
+      "details" : "Immerse yourself in a world of virtual excitement at our VR Gaming Event! Experience cutting-edge technology and thrilling adventures as you don VR headsets and enter a realm where your every move counts. Challenge friends and foes in epic virtual battles, explore immersive landscapes, and discover the future of gaming. Don't miss this opportunity to step into the future of entertainment!"
     },
     {
       "id": 5,
       "name": "LAN Party Setup",
       "image": "https://i.ibb.co/ZMMS66D/lan-1.png",
       "price": "$350",
-      "description": "Organize a LAN party with your friends. We provide high-speed networking, gaming rigs, and refreshments for an epic multiplayer gaming experience."
+      "description": "Organize a LAN party with your friends. We provide high-speed networking, gaming rigs, and refreshments for an epic multiplayer gaming experience.",
+      "details" : "A LAN party setup is a thrilling gaming event where friends gather to play multiplayer video games on a local area network (LAN). Typically held in a designated space, participants bring their gaming rigs, monitors, and peripherals. Ethernet cables connect all the devices, ensuring low-latency gameplay. The atmosphere is filled with camaraderie, competition, and shared enthusiasm for gaming."
     },
     {
       "id": 6,
       "name": "Game Developers Showcase",
       "image": "https://i.ibb.co/XZj1Xr1/download.jpg",
       "price": "$400",
-      "description": "Highlight your indie game or showcase the latest releases with our game developers event. Connect with gamers and industry professionals."
+      "description": "Highlight your indie game or showcase the latest releases with our game developers event. Connect with gamers and industry professionals.",
+      "details" : "The Game Developers Showcase is a dynamic event that brings together talented game developers, industry professionals, and gaming enthusiasts. It serves as a platform for showcasing innovative and exciting video games, offering a glimpse into the latest trends, technologies, and creative ideas shaping the gaming industry. This event is a hub for networking, collaboration, and inspiration within the gaming community."
     }
   ]
   

@@ -6,8 +6,8 @@ import { AuthContext } from "../components/authprovider/AuthProvider";
 
 const Login = () => {
   const { singIn, signInWithGoogle } = useContext(AuthContext);
-const location = useLocation();
-const navigate = useNavigate();
+  const location = useLocation();
+  const navigate = useNavigate();
   // login in user
   const handleLogIn = (e) => {
     e.preventDefault();
@@ -27,7 +27,9 @@ const navigate = useNavigate();
           progress: undefined,
           theme: "light",
         });
-        navigate(location?.state ? location.state : '/')
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 5000);
       })
       .catch((error) => {
         console.log(error.message);
@@ -45,8 +47,6 @@ const navigate = useNavigate();
           return;
         }
       });
-
-    console.log(email, password);
   };
   const handleGoogleSignIn = () => {
     signInWithGoogle()
@@ -62,14 +62,17 @@ const navigate = useNavigate();
           progress: undefined,
           theme: "light",
         });
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 5000);
       })
       .catch();
   };
 
   return (
-    <div className="mt-2 mb-3 lg:mb-10 lg:mt-5">
-      <h3 className="text-4xl text-center mb-8">Register Now</h3>
-      <div className="hero">
+    <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 max-w-7xl mx-auto">
+      <h3 className="text-4xl text-center mt-14 mb-8">Register Now</h3>
+      <div className="hero mb-14">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body" onSubmit={handleLogIn}>
             <div className="form-control">

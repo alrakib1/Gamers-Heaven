@@ -9,6 +9,8 @@ import ErrorPage from "../pages/ErrorPage";
 import Register from "../pages/Register";
 import Details from "../pages/Details";
 import PrivateRoute from "../layout/PrivateRoute";
+import Profile from "../pages/Profile";
+import SecretRoute from "../layout/SecretRoute";
   
   const router = createBrowserRouter([
     {
@@ -33,6 +35,10 @@ import PrivateRoute from "../layout/PrivateRoute";
           path: '/details/:id',
           element : <PrivateRoute><Details></Details></PrivateRoute>,
           loader : ()=> fetch('/game.json')
+        },
+        {
+          path: '/profile',
+          element : <SecretRoute><Profile></Profile></SecretRoute>
         }
       ]
     },

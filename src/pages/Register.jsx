@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../components/authprovider/AuthProvider";
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, updateUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // submit register
   const handleRegister = (e) => {
@@ -13,6 +15,11 @@ const Register = () => {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const photo = e.target.photo.value;
+
+    
+    // create user
+
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
@@ -26,6 +33,19 @@ const Register = () => {
           progress: undefined,
           theme: "light",
         });
+
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, 5000);
+        
+        // update user
+
+  updateUser(name,photo).then(() => {
+    console.log('profile updated')
+  })
+  .catch((error) => {
+    console.log(error)
+  });
       })
       .catch((error) => {
         console.log(error);
@@ -40,6 +60,8 @@ const Register = () => {
             progress: undefined,
             theme: "light",
           });
+
+
           return;
         }
       });
