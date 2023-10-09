@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../authprovider/AuthProvider";
 
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">Gamers Heaven</a>
+    <Link to='/' className="normal-case text-xl font-bold text-black bg-slate-400 p-2 rounded-lg">Gamers Heaven</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

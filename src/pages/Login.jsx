@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../components/authprovider/AuthProvider";
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -35,14 +36,9 @@ const handleLogIn = e =>{
 
 
     return (
-        <div>
-            <h4 className="text-center text-4xl">this is log in</h4>
-            <div className="hero bg-base-200">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">log in for best experience. Enjoy our services and see details outlet</p>
-    </div>
+        <div className="my-10 ">
+          <h3 className="text-4xl text-center mb-8">Register Now</h3>
+            <div className="hero">
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form className="card-body" onSubmit={handleLogIn }>
         <div className="form-control">
@@ -64,10 +60,10 @@ const handleLogIn = e =>{
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      <p className="text-center mb-4">New Here ? <Link to='/register' className="text-orange-500 font-bold">Register</Link></p>
     </div>
   </div>
 </div>
-        </div>
     );
 };
 
