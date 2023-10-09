@@ -23,7 +23,7 @@ const Navbar = () => {
         {navLinks}
       </ul>
     </div>
-    <Link to='/' className="normal-case text-xl font-bold text-black bg-slate-400 p-2 rounded-lg">Gamers Heaven</Link>
+    <Link to='/' className="normal-case md:text-xl font-bold bg-[#2B3440] text-white p-2 rounded-lg">Gamers Heaven</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
