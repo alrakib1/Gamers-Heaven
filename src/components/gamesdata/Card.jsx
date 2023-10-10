@@ -13,7 +13,7 @@ const Card = ({ service }) => {
       <div className="card-body">
         <h2 className="card-title text-center">{name}</h2>
         <p>{description}</p>
-        <p>{price}</p>
+        <p className="font-bold text-blue-700 text-xl">{price}</p>
             <p className="text-center">Want to learn about More ?</p>
         <div className="card-actions justify-center">
             <Link to={`/details/${id}`}><button className="btn btn-primary">Details</button></Link>

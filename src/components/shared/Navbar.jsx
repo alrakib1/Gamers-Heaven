@@ -1,30 +1,45 @@
-import { useContext } from "react";
+import { getAuth } from "firebase/auth";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import app from "../../services/firebase.config";
 import { AuthContext } from "../authprovider/AuthProvider";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
+
+  const auth = getAuth(app);
+
+  const [photoURL, setPhotoURL] = useState("");
+
+  useEffect(() => {
+    const user = auth.currentUser;
+    if (user !== null) {
+      const userPhotoURL = user.photoURL;
+
+      setPhotoURL(userPhotoURL);
+    } else {
+      setPhotoURL("");
+    }
+  }, [auth.currentUser]);
 
   const navLinks = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-      {user ? <>
-        <li>
-            <NavLink to="/profile">Profile</NavLink>
-          </li>
-          
-      </>: (
+      {user && (
         <>
           <li>
-            <NavLink to="/login">Log in</NavLink>
-          </li>
-          <li>
-            <NavLink to="/register">Register</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
           </li>
         </>
       )}
+      <li>
+        <NavLink to="/login">Log in</NavLink>
+      </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
     </>
   );
   return (
@@ -65,6 +80,14 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+          <div className="w-12 rounded-full">
+            <img
+              src={photoURL ? photoURL : "https://i.ibb.co/xXQLtfb/user.png"}
+              alt=""
+            />
+          </div>
+        </label>
         {user ? (
           <a className="btn" onClick={() => logOut()}>
             Log Out

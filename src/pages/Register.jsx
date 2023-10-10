@@ -17,6 +17,35 @@ const Register = () => {
     const password = e.target.password.value;
     const photo = e.target.photo.value;
 
+    const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}|:;<>,.?~]).{6,}$/;
+
+    if(password.length < 6 ){
+      
+      toast.error("Password should be at least 6 characters", {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
+    else if(!passwordRegex.test(password)){
+      toast.error("Password should have at least one Capital letter and one Special character", {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
     
     // create user
 
@@ -131,7 +160,7 @@ const Register = () => {
               </label>
             </div>
             <div className="form-control">
-              <button className="btn btn-primary">Register</button>
+              <button className="btn bg-[#2B3440] text-white">Register</button>
             </div>
           </form>
 
@@ -167,6 +196,7 @@ const Register = () => {
         pauseOnHover
         theme="light"
       />
+      
     </div>
   );
 };

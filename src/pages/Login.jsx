@@ -71,7 +71,7 @@ const Login = () => {
 
   return (
     <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 max-w-7xl mx-auto">
-      <h3 className="text-4xl text-center mt-14 mb-8">Register Now</h3>
+      <h3 className="text-4xl text-center mt-14 mb-8 font-bold">Login from here</h3>
       <div className="hero mb-14">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body" onSubmit={handleLogIn}>
@@ -105,7 +105,7 @@ const Login = () => {
               </label>
             </div>
             <div className="form-control mt-2">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn bg-[#2B3440] text-white">Login</button>
             </div>
             <p className="text-center mb-2 mt-3 font-bold">Or</p>
           </form>
