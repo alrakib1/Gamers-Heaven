@@ -89,7 +89,7 @@ const Home = () => {
       </div>
       {/* live section */}
       <div
-        className="hero lg:h-[550px]"
+        className="hero md:h-[300px] lg:h-[550px]"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/R7JbY1H/diverse-group-young-people-watching-footage-201054831-iconl.webp)",
