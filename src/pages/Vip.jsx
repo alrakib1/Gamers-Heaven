@@ -66,7 +66,9 @@ const Vip = () => {
         </div>
 
 
-        
+        <div>
+        <button className="btn text-center normal-case mx-auto flex items-center mt-20 bg-red-500 text-white">Subscribe to Vip Feature</button>
+      </div>
         
         
         
@@ -204,6 +206,7 @@ const Vip = () => {
           </tbody>
         </table>
       </div>
+      
     </div>
   );
 };

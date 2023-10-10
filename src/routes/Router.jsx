@@ -47,7 +47,7 @@ import Vip from "../pages/Vip";
           element : <SecretRoute><Profile></Profile></SecretRoute>
         },
         {
-          path: '/offers',
+          path: '/vip',
           element : <SecretRoute><Vip></Vip></SecretRoute>
         }
       ]

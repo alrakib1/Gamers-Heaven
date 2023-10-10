@@ -3,7 +3,7 @@ import Card from "../components/gamesdata/Card";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import Marquee from "react-fast-marquee";
 const Home = () => {
   const services = useLoaderData();
   useEffect(()=>{
@@ -11,11 +11,12 @@ const Home = () => {
   },[])
  
   return (
-    <div className="mt-2 lg:mt-10 max-w-7xl mx-auto ">
-      <Helmet>
-    <title>Gamers Heaven</title>
-</Helmet>
-<h2 className="text-4xl text-center mt-5 lg:mt-24 font-bold mb-5 lg:mb-20" data-aos="flip-right" >Welcome</h2>
+    <div className="mt-2 lg:mt-7 max-w-7xl mx-auto">
+      <Marquee className="bg-slate-400">
+        <p className="text-xl font-bold text-white">10% off on vip subscription!!!!!</p>
+      </Marquee>
+
+<h2 className="text-2xl md:text-4xl text-center font-bold mb-5" data-aos="flip-left">Welcome</h2>
       {/* banner */}
 
       <div className="carousel lg:h-[550px]" data-aos="slide-up">
@@ -44,7 +45,6 @@ const Home = () => {
     />
   </div>
 </div>
-
       <div className="flex justify-center w-full py-2 gap-2">
         <a href="#item1" className="btn btn-xs">
           1
@@ -60,8 +60,8 @@ const Home = () => {
         </a>
       </div>
       {/* service section */}
-      <h2 className="text-4xl text-center mt-5 lg:mt-24 font-bold" data-aos="flip-left" >Our Services</h2>
-      <div className="grid md:grid-cols-2 gap-4 lg:grid-cols-3 mt-10 mb-10 lg:mt-20" data-aos="fade-down">
+      <h2 className="text-2xl md:text-4xl text-center font-bold mt-5 mb-5" data-aos="flip-right">Our Services</h2>
+      <div className="grid md:grid-cols-2 gap-4 lg:grid-cols-3 mt-10 mb-10" data-aos="flip-right" >
         {
           services.map(service=><Card key={service.id} service={service}></Card>)
         }
