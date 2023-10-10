@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../components/authprovider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
   const { createUser, updateUser } = useContext(AuthContext);
@@ -65,7 +66,7 @@ const Register = () => {
 
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 5000);
+        }, 3000);
         
         // update user
 
@@ -100,6 +101,9 @@ const Register = () => {
 
   return (
     <div className="mt-2 mb-3 lg:mb-10 ">
+      <Helmet>
+    <title>Gamers Heaven | Register</title>
+</Helmet>
       <h3 className="text-4xl text-center mb-6 font-bold">
         Register Now for the best Experience
       </h3>

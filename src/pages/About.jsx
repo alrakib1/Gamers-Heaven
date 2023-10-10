@@ -1,10 +1,14 @@
+import { Helmet } from "react-helmet";
 import { FaArrowRight} from "react-icons/fa";
 const About = () => {
     return (
         <div className="mx-auto h-screen max-w-7xl mt-14  flex flex-col items-center">
-             <header>
+<Helmet>
+    <title>Gamers Heaven | About</title>
+</Helmet>
+             <div>
         <h1 className="text-5xl text-center mb-10 font-bold">About Us</h1>
-    </header>
+    </div>
     <div className="">
         <p className="text-3xl font-semibold mb-5">Welcome to Gamers Heaven, your trusted partner in organizing and hosting unforgettable gaming events!</p>
         <p className="mb-10">At Gamers Heaven, we are passionate about gaming and dedicated to delivering exceptional experiences for both gamers and event organizers. Whether you're an esports enthusiast, a casual gamer, or a professional event planner, we have the expertise and resources to make your gaming events a resounding success.</p>

@@ -3,6 +3,7 @@ import Card from "../components/gamesdata/Card";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 const Home = () => {
   const services = useLoaderData();
   useEffect(()=>{
@@ -11,6 +12,9 @@ const Home = () => {
  
   return (
     <div className="mt-2 lg:mt-10 max-w-7xl mx-auto ">
+      <Helmet>
+    <title>Gamers Heaven</title>
+</Helmet>
 <h2 className="text-4xl text-center mt-5 lg:mt-24 font-bold mb-5 lg:mb-20" data-aos="flip-right" >Welcome</h2>
       {/* banner */}
 

@@ -12,6 +12,7 @@ import PrivateRoute from "../layout/PrivateRoute";
 import Profile from "../pages/Profile";
 import SecretRoute from "../layout/SecretRoute";
 import About from "../pages/About";
+import Vip from "../pages/Vip";
   
   const router = createBrowserRouter([
     {
@@ -44,6 +45,10 @@ import About from "../pages/About";
         {
           path: '/profile',
           element : <SecretRoute><Profile></Profile></SecretRoute>
+        },
+        {
+          path: '/offers',
+          element : <SecretRoute><Vip></Vip></SecretRoute>
         }
       ]
     },

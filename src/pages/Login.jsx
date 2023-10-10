@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../components/authprovider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { singIn, signInWithGoogle } = useContext(AuthContext);
@@ -29,7 +30,7 @@ const Login = () => {
         });
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 5000);
+        }, 3000);
       })
       .catch((error) => {
         console.log(error.message);
@@ -64,13 +65,16 @@ const Login = () => {
         });
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 5000);
+        }, 3000);
       })
       .catch();
   };
 
   return (
     <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 max-w-7xl mx-auto">
+      <Helmet>
+    <title>Gamers Heaven | Login</title>
+</Helmet>
       <h3 className="text-4xl text-center mt-14 mb-8 font-bold">Login from here</h3>
       <div className="hero mb-14">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

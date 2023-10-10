@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const Details = () => {
@@ -15,6 +16,9 @@ const Details = () => {
   }, [id, gameDetails]);
   return (
     <div className="max-w-7xl mx-auto bg-[#2B3440] text-white rounded-lg ">
+      <Helmet>
+    <title>Gamers Heaven | Details</title>
+</Helmet>
       <div className=" flex flex-col justify-center">
         <img
           src={image}
