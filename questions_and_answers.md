@@ -18,7 +18,7 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: Answer A .
+#### Answer: A .
 
 
 <i>Because here grretign has a value and it is an empty object.</i>
@@ -45,7 +45,7 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: Answer c.
+#### Answer: C.
 
 
 <i>Because 1 is integer and 2 is string.</i>
@@ -73,7 +73,7 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: Answer A.
+#### Answer: A.
 
 
 <i>Because food's property is not modified directly.</i>
@@ -100,7 +100,7 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: Answer B.
+#### Answer: B.
 
 
 <i>Because function need an argument but the argument isn't provided. Because of the missing argument it will show undefined.</i>
