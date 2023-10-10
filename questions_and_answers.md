@@ -18,11 +18,11 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: Answer A .
 
-Answer A .
-<i>Write your explanation here</i>
-Because here grretign has a value and it is an empty object.
+
+<i>Because here grretign has a value and it is an empty object.</i>
+
 
 </p>
 </details>
@@ -45,11 +45,11 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: Answer c.
 
-Answer c.
-<i>Write your explanation here</i>
-Because 1 is integer and 2 is string.
+
+<i>Because 1 is integer and 2 is string.</i>
+
 
 </p>
 </details>
@@ -73,11 +73,11 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: Answer A.
 
-Answer A
-<i>Write your explanation here</i>
-Because food's property is not modified directly.
+
+<i>Because food's property is not modified directly.</i>
+
 
 </p>
 </details>
@@ -100,11 +100,11 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: Answer B.
 
-Answer B.
-<i>Write your explanation here</i>
-Because function need an argument but the argument isn't provided. Because of the missing argument it will show undefined.
+
+<i>Because function need an argument but the argument isn't provided. Because of the missing argument it will show undefined.</i>
+
 
 </p>
 </details>
@@ -130,11 +130,11 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: Answer C.  
 
-Answer C.  
-<i>Write your explanation here</i>
-Because each number is checked here on num whether it's truthy or not. At first on 0, it's falsy. That's why count stays 0. then 1 come to the loop. since 1 is truthy value that's why count increase to 1, then 2 come to loop and it's also truthy value and the count increase by 1 and become 2. then 3 come to loop and it's also truthy value and the count increase by 1 and count become 3.
+
+<i>Because each number is checked here on num whether it's truthy or not. At first on 0, it's falsy. That's why count stays 0. then 1 come to the loop. since 1 is truthy value that's why count increase to 1, then 2 come to loop and it's also truthy value and the count increase by 1 and become 2. then 3 come to loop and it's also truthy value and the count increase by 1 and count become 3.
+</i>
 
 </p>
 </details>
