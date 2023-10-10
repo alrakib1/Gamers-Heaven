@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 const Card = ({ service }) => {
+  useEffect(()=>{
+    Aos.init({duration: "1000", delay:"500"});
+  },[])
   const { name, price, image, id, description } = service;
   return (
-    <div className="card card-compact w-[310px] md:w-[350px] lg:w-full mx-auto  bg-base-100 shadow-xl">
+    <div className="card card-compact w-[310px] md:w-[350px] lg:w-full mx-auto  bg-base-100 shadow-xl" data-aos="fade-down">
       <figure>
         <img className="w-full h-[200px] lg:h-[250px]"
           src={image}

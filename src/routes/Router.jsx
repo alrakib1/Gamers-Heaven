@@ -11,6 +11,7 @@ import Details from "../pages/Details";
 import PrivateRoute from "../layout/PrivateRoute";
 import Profile from "../pages/Profile";
 import SecretRoute from "../layout/SecretRoute";
+import About from "../pages/About";
   
   const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ import SecretRoute from "../layout/SecretRoute";
         {
             path : '/register',
             element : <Register></Register>
+        },
+        {
+            path : '/about',
+            element : <About></About>
         },
         {
           path: '/details/:id',
