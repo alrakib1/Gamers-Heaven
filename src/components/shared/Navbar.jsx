@@ -5,7 +5,7 @@ import { AuthContext } from "../../authprovider/AuthProvider";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
-  console.log(user?.photoURL)
+  // console.log(user?.photoURL)
 
   const navLinks = (
     <>
@@ -64,12 +64,14 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <Link
+       <div className="hidden md:block">
+       <Link
           to="/"
           className="normal-case md:text-xl font-bold bg-[#2B3440] text-white p-2 rounded-lg"
         >
           Gamers Heaven
         </Link>
+       </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const Details = () => {
   const { id } = useParams();
@@ -16,6 +17,7 @@ const Details = () => {
   }, [id, gameDetails]);
   return (
     <div className="max-w-7xl mx-auto bg-[#2B3440] text-white rounded-lg ">
+        <ScrollToTop/>
       <Helmet>
     <title>Gamers Heaven | Details</title>
 </Helmet>

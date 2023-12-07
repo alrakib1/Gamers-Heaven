@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTop from '../../components/ScrollToTop'
 
 import { useLoaderData } from "react-router-dom";
 import Card from "../../components/gamesdata/Card";
@@ -14,6 +15,7 @@ const Home = () => {
 
   return (
     <div className="mt-2 lg:mt-7 max-w-7xl mx-auto">
+        <ScrollToTop/>
       <Marque></Marque>
       <h2
         className="text-2xl md:text-4xl text-center font-bold mb-5 mt-5"

@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../authprovider/AuthProvider";
+import ScrollToTop from "../../components/ScrollToTop";
 
 
 const Login = () => {
@@ -77,6 +78,7 @@ const Login = () => {
       <Helmet>
         <title>Gamers Heaven | Login</title>
       </Helmet>
+      <ScrollToTop/>
       <h3 className="text-4xl text-center mt-14 mb-8 font-bold">
         Login from here
       </h3>

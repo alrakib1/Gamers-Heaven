@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import { useContext } from "react";
 import { AuthContext } from "../../authprovider/AuthProvider";
+import ScrollToTop from "../../components/ScrollToTop";
 
 
 
@@ -23,6 +24,7 @@ console.log(user)
    
   return (
     <div className="container mx-auto h-screen">
+        <ScrollToTop/>
       <Helmet>
         <title>Gamers Heaven | Profile</title>
       </Helmet>

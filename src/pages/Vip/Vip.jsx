@@ -1,8 +1,14 @@
+import { Helmet } from "react-helmet";
 import { FaRegHandPointRight } from "react-icons/fa6";
+import ScrollToTop from "../../components/ScrollToTop";
 
 const Vip = () => {
   return (
     <div className="max-w-7xl mx-auto">
+      <ScrollToTop />
+      <Helmet>
+        <title>Gamers Heaven | Vip</title>
+      </Helmet>
       <h3 className="text-4xl text-center mt-10  mb-8 md:mb-16 md:mt-14 font-bold">
         Vip User Perks
       </h3>
@@ -10,71 +16,68 @@ const Vip = () => {
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
           <span className="text-green-600 md:text-xl">Early Access </span>{" "}
-          <p> :
-            VIP ticket holders may get early access to the event or specific
+          <p>
+            {" "}
+            : VIP ticket holders may get early access to the event or specific
             game demos.
           </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
-          <span className="text-green-600 md:text-xl">Exclusive Swag </span> {" "}
-          <p> :
-           VIP attendees may receive exclusive merchandise, such
-          as T-shirts, posters, or collectibles.
-        </p>
+          <span className="text-green-600 md:text-xl">Exclusive Swag </span>{" "}
+          <p>
+            {" "}
+            : VIP attendees may receive exclusive merchandise, such as T-shirts,
+            posters, or collectibles.
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
           <span className="text-green-600 md:text-xl">Priority Seating</span>{" "}
           <p>
-          : VIP tickets may provide access to premium seating
-          areas during esports tournaments or keynote presentations.
-        </p>
+            : VIP tickets may provide access to premium seating areas during
+            esports tournaments or keynote presentations.
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
           <span className="text-green-600 md:text-xl">Meet and Greets</span>{" "}
           <p>
-          : Some VIP packages offer the opportunity to meet game
-          developers, esports players, or industry personalities.
-        </p>
+            : Some VIP packages offer the opportunity to meet game developers,
+            esports players, or industry personalities.
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
           <span className="text-green-600 md:text-xl">Private Parties</span>{" "}
           <p>
-          : VIP attendees may be invited to exclusive parties or
-          receptions.
-        </p>
+            : VIP attendees may be invited to exclusive parties or receptions.
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
-          <span className="text-green-600 md:text-xl">Limited Edition In-Game Items </span>{" "}
+          <span className="text-green-600 md:text-xl">
+            Limited Edition In-Game Items{" "}
+          </span>{" "}
           <p>
-          : In some cases, VIP attendees may
-          receive in-game items or digital content for the games featured at the
-          event.
-        </p>
+            : In some cases, VIP attendees may receive in-game items or digital
+            content for the games featured at the event.
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <FaRegHandPointRight className="text-xl hidden lg:block"></FaRegHandPointRight>{" "}
           <span className="text-green-600 md:text-xl"> Fast Passes</span>{" "}
           <p>
-         : VIP ticket holders might have shorter lines for popular
-          attractions or activities.
-        </p>
+            : VIP ticket holders might have shorter lines for popular
+            attractions or activities.
+          </p>
         </div>
 
-
         <div>
-        <button className="btn text-center normal-case mx-auto flex items-center mt-20 bg-red-500 text-white">Subscribe to Vip Feature</button>
-      </div>
-        
-        
-        
-        
-        
-
+          <button className="btn text-center normal-case mx-auto flex items-center mt-20 bg-red-500 text-white">
+            Subscribe to Vip Feature
+          </button>
+        </div>
       </div>
       <h2 className="text-4xl text-center mt-10 mb-7  lg:mt-20 lg:mb-16 font-bold">
         Our Top vip Users
@@ -206,7 +209,6 @@ const Vip = () => {
           </tbody>
         </table>
       </div>
-      
     </div>
   );
 };

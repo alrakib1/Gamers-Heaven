@@ -35,8 +35,8 @@ const Banner = () => {
         <SwiperSlide>
           {" "}
           <img
-            src="https://i.ibb.co/PDSQstM/tour-article-banner-2000x800.png"
-            className="w-full lg:max-h-[510px]"
+            src="https://i.ibb.co/ZmDvkjH/PUBG-New-State-Story-EN-Banner.jpg"
+            className="w-full lg:max-h-[510px] "
           />
         </SwiperSlide>
         <SwiperSlide>

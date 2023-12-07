@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthContext } from "../../authprovider/AuthProvider";
+import ScrollToTop from "../../components/ScrollToTop";
 
 
 const Register = () => {
@@ -103,6 +104,7 @@ const Register = () => {
 
   return (
     <div className="mt-2 mb-3 lg:mb-10 ">
+        <ScrollToTop/>
       <Helmet>
         <title>Gamers Heaven | Register</title>
       </Helmet>

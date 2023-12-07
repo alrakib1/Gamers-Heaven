@@ -1,9 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Helmet } from "react-helmet";
 import { FaArrowRight } from "react-icons/fa";
+import ScrollToTop from "../../components/ScrollToTop";
 const About = () => {
   return (
     <div className="mx-auto h-screen max-w-7xl mt-14  flex flex-col items-center">
+        <ScrollToTop/>
       <Helmet>
         <title>Gamers Heaven | About</title>
       </Helmet>
