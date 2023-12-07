@@ -21,9 +21,6 @@ const Banner = () => {
   return (
     <>
       <Swiper
-        pagination={{
-          dynamicBullets: true,
-        }}
         autoplay={true}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
@@ -32,28 +29,28 @@ const Banner = () => {
           {" "}
           <img
             src="https://i.ibb.co/J25WTKP/4c3f95119443737-609d6a740d9e3.jpg"
-            className="w-full lg:h-[500px] "
+            className="w-full lg:max-h-[510px] "
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/PDSQstM/tour-article-banner-2000x800.png"
-            className="w-full lg:h-[500px]"
+            className="w-full lg:max-h-[510px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/bsV9xnX/csgo-tournaments.jpg"
-            className="w-full lg:h-[500px]"
+            className="w-full lg:max-h-[510px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/Y00JXfT/league-of-legends-tournaments.jpg"
-            className="w-full lg:h-[500px]"
+            className="w-full lg:max-h-[510px]"
           />
         </SwiperSlide>
       </Swiper>
