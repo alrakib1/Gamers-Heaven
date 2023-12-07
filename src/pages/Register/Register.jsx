@@ -1,9 +1,10 @@
 import { useContext } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { AuthContext } from "../components/authprovider/AuthProvider";
-import { Helmet } from "react-helmet";
+import { AuthContext } from "../../authprovider/AuthProvider";
+
 
 const Register = () => {
   const { createUser, updateUser } = useContext(AuthContext);
@@ -20,8 +21,7 @@ const Register = () => {
 
     const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}|:;<>,.?~]).{6,}$/;
 
-    if(password.length < 6 ){
-      
+    if (password.length < 6) {
       toast.error("Password should be at least 6 characters", {
         position: "bottom-center",
         autoClose: 5000,
@@ -33,21 +33,23 @@ const Register = () => {
         theme: "light",
       });
       return;
-    }
-    else if(!passwordRegex.test(password)){
-      toast.error("Password should have at least one Capital letter and one Special character", {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
+    } else if (!passwordRegex.test(password)) {
+      toast.error(
+        "Password should have at least one Capital letter and one Special character",
+        {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        }
+      );
       return;
     }
-    
+
     // create user
 
     createUser(email, password)
@@ -66,20 +68,21 @@ const Register = () => {
 
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 3000);
-        
+        }, 1000);
+
         // update user
 
-  updateUser(name,photo).then(() => {
-    console.log('profile updated')
-  })
-  .catch((error) => {
-    console.log(error)
-  });
+        updateUser(name, photo)
+          .then(() => {
+            // console.log("profile updated");
+          })
+          .catch(() => {
+            // console.log(error);
+          });
       })
       .catch((error) => {
-        console.log(error);
-        if ("Firebase: Error (auth/email-already-in-use).") {
+        // console.log(error);
+        if (error) {
           toast.error("User Already Exits", {
             position: "bottom-center",
             autoClose: 5000,
@@ -91,7 +94,6 @@ const Register = () => {
             theme: "light",
           });
 
-
           return;
         }
       });
@@ -102,8 +104,8 @@ const Register = () => {
   return (
     <div className="mt-2 mb-3 lg:mb-10 ">
       <Helmet>
-    <title>Gamers Heaven | Register</title>
-</Helmet>
+        <title>Gamers Heaven | Register</title>
+      </Helmet>
       <h3 className="text-4xl text-center mb-6 font-bold">
         Register Now for the best Experience
       </h3>
@@ -200,7 +202,6 @@ const Register = () => {
         pauseOnHover
         theme="light"
       />
-      
     </div>
   );
 };

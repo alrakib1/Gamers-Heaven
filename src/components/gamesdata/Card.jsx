@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; 
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
@@ -29,4 +30,7 @@ const Card = ({ service }) => {
   );
 };
 
+Card.propTypes = {
+  service: PropTypes.object,
+};
 export default Card;

@@ -1,9 +1,10 @@
 import { useContext } from "react";
+import { Helmet } from "react-helmet";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { AuthContext } from "../components/authprovider/AuthProvider";
-import { Helmet } from "react-helmet";
+import { AuthContext } from "../../authprovider/AuthProvider";
+
 
 const Login = () => {
   const { singIn, signInWithGoogle } = useContext(AuthContext);
@@ -30,11 +31,12 @@ const Login = () => {
         });
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 3000);
+        }, 1000);
       })
       .catch((error) => {
-        console.log(error.message);
-        if (`Firebase: Error (auth/invalid-login-credentials).`) {
+        // console.log(error.message);
+        // eslint-disable-next-line no-constant-condition
+        if (error) {
           toast.error("wrong email or password", {
             position: "bottom-center",
             autoClose: 5000,
@@ -51,8 +53,8 @@ const Login = () => {
   };
   const handleGoogleSignIn = () => {
     signInWithGoogle()
-      .then((result) => {
-        console.log(result);
+      .then(() => {
+        // console.log(result);
         toast.success("Login successful", {
           position: "top-center",
           autoClose: 5000,
@@ -65,7 +67,7 @@ const Login = () => {
         });
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, 3000);
+        }, 1000);
       })
       .catch();
   };
@@ -73,9 +75,11 @@ const Login = () => {
   return (
     <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 max-w-7xl mx-auto">
       <Helmet>
-    <title>Gamers Heaven | Login</title>
-</Helmet>
-      <h3 className="text-4xl text-center mt-14 mb-8 font-bold">Login from here</h3>
+        <title>Gamers Heaven | Login</title>
+      </Helmet>
+      <h3 className="text-4xl text-center mt-14 mb-8 font-bold">
+        Login from here
+      </h3>
       <div className="hero mb-14">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form className="card-body" onSubmit={handleLogIn}>

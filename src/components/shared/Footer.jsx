@@ -11,7 +11,7 @@ const Footer = () => {
   </aside> 
   <nav>
     <header className="footer-title">Company</header> 
-    <Link to='/about'><a className="link link-hover">About us</a> </Link>
+    <Link to='/about'><p className="link link-hover">About us</p> </Link>
     <a className="link link-hover">Contact</a> 
     <a className="link link-hover">Jobs</a> 
     <a className="link link-hover">Press kit</a>

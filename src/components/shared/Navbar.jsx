@@ -1,33 +1,18 @@
-import { getAuth } from "firebase/auth";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import app from "../../services/firebase.config";
-import { AuthContext } from "../authprovider/AuthProvider";
+import { AuthContext } from "../../authprovider/AuthProvider";
+
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
-
-  const auth = getAuth(app);
-
-  const [photoURL, setPhotoURL] = useState("");
-
-  useEffect(() => {
-    const user = auth.currentUser;
-    if (user !== null) {
-      const userPhotoURL = user.photoURL;
-
-      setPhotoURL(userPhotoURL);
-    } else {
-      setPhotoURL("");
-    }
-  }, [auth.currentUser]);
+  console.log(user?.photoURL)
 
   const navLinks = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-      {user && (
+      {user ? (
         <>
           <li>
             <NavLink to="/profile">Profile</NavLink>
@@ -36,20 +21,24 @@ const Navbar = () => {
             <NavLink to="/vip">Vip</NavLink>
           </li>
         </>
+      ) : (
+        <>
+          <li>
+            <NavLink to="/login">Log in</NavLink>
+          </li>
+          <li>
+            <NavLink to="/register">Register</NavLink>
+          </li>
+        </>
       )}
-      <li>
-        <NavLink to="/login">Log in</NavLink>
-      </li>
-      <li>
-        <NavLink to="/register">Register</NavLink>
-      </li>
+
       <li>
         <NavLink to="/about">About Us</NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100 max-w-7xl mx-auto">
+    <div className="navbar bg-base-100 max-w-7xl mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -89,7 +78,11 @@ const Navbar = () => {
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
           <div className="w-12 rounded-full">
             <img
-              src={photoURL ? photoURL : "https://i.ibb.co/xXQLtfb/user.png"}
+              src={
+                user?.photoURL
+                  ? user?.photoURL
+                  : "https://i.ibb.co/xXQLtfb/user.png"
+              }
               alt=""
             />
           </div>

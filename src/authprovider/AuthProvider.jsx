@@ -8,8 +8,13 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+
+
 import { createContext, useEffect, useState } from "react";
-import app from "../../services/firebase.config";
+import app from "../services/firebase.config";
+import { checkPropTypes } from "prop-types";
+
+
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
@@ -80,6 +85,12 @@ const AuthProvider = ({ children }) => {
     signInWithGoogle,
     updateUser
   };
+
+ AuthProvider.propTypes = {
+    children: checkPropTypes.object,
+  };
+  
+
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
