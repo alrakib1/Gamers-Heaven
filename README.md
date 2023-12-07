@@ -16,6 +16,10 @@ Game Event Management Website
 - When you log in to our site it your given profile picture will be on navbar and on profile page. After logout will go the default phase.
 
 
+## Live Website
+https://gamers-heaven-99179.web.app/
+
+
 ## Authors
 
 - [alrakib1](https://github.com/alrakib1)
