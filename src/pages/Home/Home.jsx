@@ -24,7 +24,7 @@ const Home = () => {
         Welcome
       </h2>
       {/* banner */}
-      <div >
+      <div className="mb-10">
       <Banner></Banner>
       </div>
    
