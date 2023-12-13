@@ -9,9 +9,7 @@ const Root = () => {
         <div>
             <Header></Header>
             <Navbar></Navbar>
-           <div className="min-h-screen flex flex-col">
-           <Outlet></Outlet>
-           </div>
+            <Outlet></Outlet>
             <Footer></Footer>
         </div>
     );

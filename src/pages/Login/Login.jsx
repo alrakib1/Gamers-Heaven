@@ -74,7 +74,7 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 ">
+    <div className="mt-2 mb-3 lg:mb-10 lg:mt-5 max-w-7xl mx-auto">
       <Helmet>
         <title>Gamers Heaven | Login</title>
       </Helmet>
@@ -82,9 +82,9 @@ const Login = () => {
       <h3 className="text-4xl text-center mt-14 mb-8 font-bold">
         Login from here
       </h3>
-      <div className="hero">
+      <div className="hero mb-14">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-          <form className="card-body w-full" onSubmit={handleLogIn}>
+          <form className="card-body" onSubmit={handleLogIn}>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Email</span>
