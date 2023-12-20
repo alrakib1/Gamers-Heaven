@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className="xs:block sm:hidden">
+      <li className="xs:block md:hidden">
         <NavLink to="/">Home</NavLink>
       </li>
       {user ? (
@@ -38,7 +38,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 max-w-screen-xl  mx-auto ">
+    
+<div className="bg-[#130d417e] text-white relative w-full">
+<div className="navbar  max-w-screen-xl  mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,7 +61,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content bg-[#0D073A] mt-3 z-[1] p-2 shadow rounded-box w-52"
           >
             {navLinks}
           </ul>
@@ -67,9 +69,9 @@ const Navbar = () => {
        <div className="hidden md:block">
        <Link
           to="/"
-          className="normal-case md:text-xl font-bold bg-[#2B3440] text-white p-2 rounded-lg"
+          className="normal-case md:text-xl font-bold  text-white p-2 rounded-lg"
         >
-          Gamers Heaven
+          <img src="	https://i.ibb.co/5xKV4Pc/download-removebg-preview.png" className="w-5/12" alt="" />
         </Link>
        </div>
       </div>
@@ -100,6 +102,9 @@ const Navbar = () => {
         )}
       </div>
     </div>
+</div>
+
+    
   );
 };
 

@@ -2,7 +2,7 @@ import moment from "moment";
 
 const Header = () => {
   return (
-    <div className="mb-2 mt-2 max-w-7xl mx-auto" >
+    <div className="mb-2 pt-2 max-w-7xl mx-auto" >
       <div className="flex flex-col justify-center items-center">
         <img className="h-1/2"
           src="https://i.ibb.co/5xKV4Pc/download-removebg-preview.png"
