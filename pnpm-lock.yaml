@@ -9,7 +9,7 @@ dependencies:
     specifier: ^2.3.4
     version: 2.3.4
   firebase:
-    specifier: ^10.4.0
+    specifier: ^10.7.1
     version: 10.7.1
   globals:
     specifier: ^13.23.0
