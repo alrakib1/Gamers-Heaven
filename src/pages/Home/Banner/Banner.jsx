@@ -29,28 +29,28 @@ const Banner = () => {
           {" "}
           <img
             src="https://i.ibb.co/J25WTKP/4c3f95119443737-609d6a740d9e3.jpg"
-            className="w-full lg:max-h-[510px] "
+            className="w-full lg:max-h-[540px] object-contain "
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/ZmDvkjH/PUBG-New-State-Story-EN-Banner.jpg"
-            className="w-full lg:max-h-[510px] "
+            className="w-full lg:max-h-[540px] object-contain "
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/bsV9xnX/csgo-tournaments.jpg"
-            className="w-full lg:max-h-[510px]"
+            className="w-full lg:max-h-[540px] object-contain"
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co/Y00JXfT/league-of-legends-tournaments.jpg"
-            className="w-full lg:max-h-[510px]"
+            className="w-full lg:max-h-[540px] object-contain"
           />
         </SwiperSlide>
       </Swiper>

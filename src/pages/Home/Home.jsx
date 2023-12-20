@@ -17,14 +17,14 @@ const Home = () => {
     <div className="mt-2 lg:mt-7">
         <ScrollToTop/>
       <Marque></Marque>
-      <h2
+      {/* <h2
         className="text-2xl md:text-4xl text-center font-bold mb-5 mt-5"
         data-aos="flip-left"
       >
         Welcome
-      </h2>
+      </h2> */}
       {/* banner */}
-      <div className="w-3/4 mx-auto">
+      <div className="w-9/12 py-5  mx-auto">
       <Banner></Banner>
       </div>
    
@@ -36,7 +36,7 @@ const Home = () => {
       >
         Our Services
       </h2>
-      <div className="grid md:grid-cols-2 gap-4 lg:grid-cols-3 mt-10 mb-10">
+      <div className="container mx-auto grid md:grid-cols-2 gap-4 lg:grid-cols-3 mt-10 mb-10">
         {services.map((service) => (
           <Card key={service.id} service={service}></Card>
         ))}

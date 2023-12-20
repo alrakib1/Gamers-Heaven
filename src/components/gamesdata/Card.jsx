@@ -9,15 +9,15 @@ const Card = ({ service }) => {
   },[])
   const { name, price, image, id, description } = service;
   return (
-    <div className="card card-compact w-[310px] md:w-[350px] lg:w-full mx-auto  bg-base-100 shadow-xl" data-aos="fade-down">
+    <div className="card w-9/12 mx-auto text-black card-compact  bg-yellow-100 shadow-xl" data-aos="fade-down">
       <figure>
-        <img className="w-full h-[200px] lg:h-[250px]"
+        <img className="object-contain"
           src={image}
           alt={name}
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-center">{name}</h2>
+        <h2 className="card-title">{name}</h2>
         <p>{description}</p>
         <p className="font-bold text-blue-700 text-xl">{price}</p>
             <p className="text-center">Want to learn about More ?</p>

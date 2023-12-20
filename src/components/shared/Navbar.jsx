@@ -80,7 +80,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
-          <div className="w-12 rounded-full">
+          <div className="w-8 md:w-12 rounded-full">
             <img
               src={
                 user?.photoURL
