@@ -14,7 +14,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="mt-2 lg:mt-7 max-w-7xl mx-auto">
+    <div className="mt-2 lg:mt-7">
         <ScrollToTop/>
       <Marque></Marque>
       <h2
@@ -24,7 +24,7 @@ const Home = () => {
         Welcome
       </h2>
       {/* banner */}
-      <div >
+      <div className="w-3/4 mx-auto">
       <Banner></Banner>
       </div>
    

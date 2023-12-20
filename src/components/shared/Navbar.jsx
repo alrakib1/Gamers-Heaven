@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li>
+      <li className="xs:block sm:hidden">
         <NavLink to="/">Home</NavLink>
       </li>
       {user ? (
@@ -38,7 +38,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 max-w-7xl mx-auto ">
+    <div className="navbar bg-base-100 max-w-screen-xl  mx-auto ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
